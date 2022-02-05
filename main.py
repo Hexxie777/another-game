@@ -17,12 +17,12 @@ log = input("Zaloguj się podając login: ")
 passw = input("Podaj hasło: ")
 
 if log == login[0] and passw == password[0]:
-    print("Witaj ", login[0]," masz permisje: ",  accounts["Grzegorz"])
+    print("Witaj ", login[0]," masz permisje: ",  accounts["Worker"])
     print("Masz dużo roboty, zrobisz coś pożytecznego co?")
     #Importowanie gry w zależności od podanego konta
     import games.game2 as game2
 elif log == login[1] and passw == password[1]:
-    print("Witaj ",login[1], "ty tu jesteś szefem B)")
+    print("Witaj ",login[1], "masz permisje: ", accounts["Szef"])
     print("Baw się dobrze!")
     #Importowanie gry w zależności od podanego konta
     import games.game1 as game1
