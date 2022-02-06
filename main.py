@@ -15,7 +15,7 @@ print("""
 
 def games():
     print("Co chcesz włączyć?\n1 - 'Rock Papers Scissors'\n2 - 'Find a number'\n3 - Słownik")
-    dec = int(input())
+    dec = int(input(">>> "))
     if dec == 1:
         print("Włączam grę...")
         input("Naciśnij enter, aby kontynuować...")
