@@ -33,8 +33,10 @@ while True:
     if guess == number:
         print("""
         
+                
                     <-!-> YOU WON <-!->    
 
+                
                 """)
         print(number, "to dobra liczba!","\nWykorzystałeś", tries, "prób")        
         break
