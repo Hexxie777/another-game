@@ -20,7 +20,6 @@ while True:
     
     guess = int(input("\nPodaj liczbę: "))
 
-
     if tries == 9:
         print("""           
         
