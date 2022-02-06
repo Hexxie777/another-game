@@ -22,8 +22,8 @@ def score():
         """)
     print("         Masz ", player_won, "punktów")
     print("         Komputer ma ", pc_won, "punktów\n\n")
-
-while player != "4":
+    print("0 - Zakończenie rozgrywki\n1 - Papier\n2 - Kamień\n3 - Nożyce")
+while player != "0":
     
     player = input("Wpisz co chcesz zagrać: ")
     if player == "1":
@@ -76,4 +76,4 @@ while player != "4":
         """)
         quit()
     else:
-        print("Podano zły numer.")
+        print("Podano zły numer. Spróbuj ponownie.")
