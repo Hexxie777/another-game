@@ -8,8 +8,8 @@ print("""
     """)
 print("0 - Zakończenie rozgrywki\n1 - Papier\n2 - Kamień\n3 - Nożyce")
 
+#Ilość wygranych rund
 player_won = 0
-
 pc_won = 0
 
 player = None
