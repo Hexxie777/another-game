@@ -21,28 +21,30 @@ def games():
             dec = input(">>> ")
 
 
-login = []
-password = []
+login = ["Worker", "Szef","Gość"]
+password = ["workspace", "imaboss", " "]
 
 print("Podaj nowy login i hasło.")
 
-#Rejstracja
-new_login = input("Login: ")
-new_password = input("Hasło: ")
-
 #Dodawanie danych 
-login.append(new_login)
-password.append(new_password)
 
-print("Teraz możesz zalogować się do aplikacji, podaj dane: ")
 
 #Logowanie się z "nowego konta"
 while True:
-    app_login = input("Podaj login: ")
-    app_password = input("Podaj hasło: ")
-    if app_login == login[0] and app_password == password[0]:
-        print("Witaj", login[0], "narazie masz permisje gościa, poczekaj na zweryfikowanie swojego konta.")
-        games()
+    new_login = input("Login: ")
+    new_password = input("Hasło: ")
+    if new_login not in login:
+        login.append(new_login)
+        password.append(new_password)
+        print("Sukces twoje konto zostało utworzone.")
+        print("Teraz możesz zalogować się do aplikacji, podaj dane: ")
+        while True:
+            app_login = input("Podaj login: ")
+            app_password = input("Podaj hasło: ")
+            if app_login == login[3] and app_password == password[3]:
+                print("Witaj", login[3], "narazie masz permisje gościa, poczekaj na zweryfikowanie swojego konta.")
+                games()
+            else:
+                print("Podane dane są nieprawidłowe. Spróbuj ponownie.")
     else:
-        print("Podano złe dane. Spróbuj ponownie.")
-
+        print("Takie konto już istnieje.")
