@@ -13,20 +13,26 @@ print("""
 
 
 def games():
+    
     print("Co chcesz włączyć?\n1 - 'Rock Papers Scissors'\n2 - 'Find a number'\n3 - Słownik")
-    dec = int(input(">>> "))
-    if dec == 1:
-        print("Włączam grę...")
-        input("Naciśnij enter, aby kontynuować...")
-        import games.game2 as rock_papers_scissors
-    if dec == 2:
-        print("Włączam grę...")
-        input("Naciśnij enter, aby kontynuować...")
-        import games.game1 as find_a_number
-    if dec == 3:
-        print("Ładuję słownik...")
-        input("Naciśnij enter, aby kontynuować...")
-        import games.slownik as slownik
+    dec = input(">>> ")    
+    while dec != "1" or "2" or "3":
+        if dec == "1":
+            print("Włączam grę:'Papier kamień nożyce'...")
+            input("Naciśnij enter, aby kontynuować...")
+            import games.game2 as rock_papers_scissors
+        if dec == "2":
+            print("Włączam grę:'Jaka to liczba'...")
+            input("Naciśnij enter, aby kontynuować...")
+            import games.game1 as find_a_number
+        if dec == "3":
+            print("Ładuję słownik...")
+            input("Naciśnij enter, aby kontynuować...")
+            import games.slownik as slownik
+        else:
+            print("Podano zły warunek. Spróbuj ponownie. ")
+            dec = input(">>> ")
+        
 
 log = input("Zaloguj się podając login: ")
 
