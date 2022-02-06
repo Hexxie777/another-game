@@ -8,14 +8,17 @@ def games():
             print("Włączam grę:'Papier kamień nożyce'...")
             input("Naciśnij enter, aby kontynuować...")
             import games.game2 as rock_papers_scissors
+            exit()
         if dec == "2":
             print("Włączam grę:'Jaka to liczba'...")
             input("Naciśnij enter, aby kontynuować...")
             import games.game1 as find_a_number
+            exit()
         if dec == "3":
             print("Ładuję słownik...")
             input("Naciśnij enter, aby kontynuować...")
             import games.slownik as slownik
+            exit()
         else:
             print("Podano zły warunek. Spróbuj ponownie. ")
             dec = input(">>> ")
