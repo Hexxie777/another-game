@@ -1,6 +1,5 @@
-#loginy do log
 login = ["Worker", "Szef","Gość"]
-#hasla do passw 
+
 password = ["workspace", "imaboss", " "]
 
 accounts = {"Worker" : "Pracownik", "Szef" : "Prezes", "Gość" : "Gościa"}
