@@ -37,7 +37,7 @@ while True:
                     <-!-> YOU WON <-!->    
 
                 """)
-        print("Wykorzystałeś", tries, "prób")        
+        print(number, "to dobra liczba!","\nWykorzystałeś", tries, "prób")        
         break
     
     if guess <= number:
