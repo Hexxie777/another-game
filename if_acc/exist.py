@@ -29,17 +29,19 @@ def games():
             dec = input(">>> ")
 
 #Logowanie się
-log = input("Zaloguj się podając login: ")
-passw = input("Podaj hasło: ")
 
-if log == login[0] and passw == password[0]:
-    print("Witaj ", login[0]," masz permisje: ",  accounts["Worker"])
-    games()
-elif log == login[1] and passw == password[1]:
-    print("Witaj ",login[1], "masz permisje: ", accounts["Szef"])
-    games()
-elif log == login[2] and password[2]:
-    print("Witaj ", login[2], " masz permisje: ", accounts["Gość"])
-    games()
-else:
-    print("Podano złe dane.")
+while True:
+    log = input("Zaloguj się podając login: ")
+    passw = input("Podaj hasło: ")
+
+    if log == login[0] and passw == password[0]:
+        print("Witaj ", login[0]," masz permisje: ",  accounts["Worker"])
+        games()
+    elif log == login[1] and passw == password[1]:
+        print("Witaj ",login[1], "masz permisje: ", accounts["Szef"])
+        games()
+    elif log == login[2] and password[2]:
+        print("Witaj ", login[2], " masz permisje: ", accounts["Gość"])
+        games()
+    else:
+        print("Podano złe dane.")
