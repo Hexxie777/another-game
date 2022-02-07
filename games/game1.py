@@ -6,10 +6,11 @@ number = random.randint(1,100)
 tries = 0
 
 print("""
-    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-    X   Witaj w grze jaka to liczba! Musisz zgadąć liczbę wygenerowaną przez komputer  X
-    X                       (od 0 do 100), masz tylko 10 prób!                         X
-    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            X             Witaj w grze jaka to liczba!            X
+            X   Musisz zgadnąć liczbę wygenerowaną przez komputer  X
+            X           (od 0 do 100), masz tylko 10 prób!        X                 
+            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
       """
 )
