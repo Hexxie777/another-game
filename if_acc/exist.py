@@ -44,4 +44,4 @@ while True:
         print("Witaj ", login[2], " masz permisje: ", accounts["Gość"])
         games()
     else:
-        print("Podano złe dane.")
+        print("Podano złe dane. Spróbuj ponownie.")
